@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+*.py[cod]
+*$py.class
+build/
+dist/
+wheels/
+*.egg-info
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Virtual environments
+.venv
+
+# Ruff
+.ruff_cache/
+
+# uv
+uv.lock
