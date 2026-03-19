@@ -1,0 +1,32 @@
+{
+  "window_width": 618,
+  "window_height": 1543,
+  "calibrated_date": "2025-03-18",
+  "controls": {
+    "shutter": {
+      "relative_x": 0.699,
+      "relative_y": 0.084,
+      "description": "Shutter button (takes photo)"
+    },
+    "ae": {
+      "relative_x": 0.583,
+      "relative_y": 0.084,
+      "description": "AE button (preview focus)"
+    },
+    "aperture": {
+      "relative_x": 0.377,
+      "relative_y": 0.187,
+      "description": "Aperture setting (233px from left, 288px from top)"
+    },
+    "iso": {
+      "relative_x": 0.631,
+      "relative_y": 0.266,
+      "description": "ISO setting (390px from left, 411px from top)"
+    },
+    "wb": {
+      "relative_x": 0.377,
+      "relative_y": 0.266,
+      "description": "White Balance setting (233px from left, 411px from top)"
+    }
+  }
+}
