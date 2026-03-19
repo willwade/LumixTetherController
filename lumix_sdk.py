@@ -16,8 +16,23 @@ from pathlib import Path
 from typing import Optional
 
 # Path to the Lumix SDK library
-SDK_PATH = Path(__file__).parent / "LumixRemoteControlLibraryBeta1.00"
-DLL_PATH = SDK_PATH / "Library" / "Lmxptpif.dll"
+def get_dll_path() -> Path:
+    """
+    Get the path to Lmxptpif.dll.
+
+    For frozen apps (PyInstaller), looks next to the executable.
+    For development, looks in the project root (DLL from LUMIX SDK).
+    """
+    # Check if running as frozen app (PyInstaller, etc.)
+    if getattr(sys, 'frozen', False):
+        # Frozen app - DLL should be next to executable
+        return Path(sys.executable).parent / "Lmxptpif.dll"
+
+    # Development mode - look in project root
+    return Path(__file__).parent / "Lmxptpif.dll"
+
+
+DLL_PATH = get_dll_path()
 
 # Constants from LMX_lib_type.h
 LMX_BOOL_TRUE = 1

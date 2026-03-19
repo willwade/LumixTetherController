@@ -17,6 +17,7 @@ This tool uses the **Windows-Use** framework to interact with the UI automation 
 - **Software**: LUMIX Tether installed and connected to a GH5M2
 - **Python**: 3.11+ managed by `uv`
 - **API Key**: OpenAI API key for agentic mode (optional)
+- **Lumix SDK**: [LUMIX Remote Control Library](https://av.jpn.support.panasonic.com/support/global/cs/soft/tool/sdk.html) (DLL included in repo)
 
 ## Quick Start
 
